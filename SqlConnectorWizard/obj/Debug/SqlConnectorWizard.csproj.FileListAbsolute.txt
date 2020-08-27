@@ -1,0 +1,33 @@
+F:\Wilcom Systems 2020\SqlConnectorWizard\SqlConnectorWizard\bin\Debug\SqlConnectorWizard.exe
+F:\Wilcom Systems 2020\SqlConnectorWizard\SqlConnectorWizard\bin\Debug\SqlConnectorWizard.pdb
+F:\Wilcom Systems 2020\SqlConnectorWizard\SqlConnectorWizard\obj\Debug\SqlConnectorWizard.Form1.resources
+F:\Wilcom Systems 2020\SqlConnectorWizard\SqlConnectorWizard\obj\Debug\SqlConnectorWizard.Properties.Resources.resources
+F:\Wilcom Systems 2020\SqlConnectorWizard\SqlConnectorWizard\obj\Debug\SqlConnectorWizard.csproj.GenerateResource.cache
+F:\Wilcom Systems 2020\SqlConnectorWizard\SqlConnectorWizard\obj\Debug\SqlConnectorWizard.exe
+F:\Wilcom Systems 2020\SqlConnectorWizard\SqlConnectorWizard\obj\Debug\SqlConnectorWizard.pdb
+F:\Wilcom Systems 2020\SqlConnectorWizard\SqlConnectorWizard\bin\Debug\log4net.config
+F:\Wilcom Systems 2020\SqlConnectorWizard\SqlConnectorWizard\bin\Debug\log4net.dll
+F:\Wilcom Systems 2020\SqlConnectorWizard\SqlConnectorWizard\bin\Debug\log4net.xml
+F:\Wilcom Systems 2020\SqlConnectorWizard\SqlConnectorWizard\obj\Debug\SqlConnectorWizard.csproj.CopyComplete
+F:\Wilcom Systems 2020\SqlConnectorWizard\SqlConnectorWizard\bin\Debug\SqlConnectorWizard.exe.config
+F:\Wilcom Systems 2020\SqlConnectorWizard\SqlConnectorWizard\obj\Debug\SqlConnectorWizard.csprojAssemblyReference.cache
+D:\WILCOM\DEV\SqlConnectorWizard\SqlConnectorWizard\obj\Debug\SqlConnectorWizard.csprojAssemblyReference.cache
+D:\WILCOM\DEV\SqlConnectorWizard\SqlConnectorWizard\obj\Debug\SqlConnectorWizard.Form1.resources
+D:\WILCOM\DEV\SqlConnectorWizard\SqlConnectorWizard\obj\Debug\SqlConnectorWizard.Properties.Resources.resources
+D:\WILCOM\DEV\SqlConnectorWizard\SqlConnectorWizard\obj\Debug\SqlConnectorWizard.csproj.GenerateResource.cache
+D:\WILCOM\DEV\SqlConnectorWizard\SqlConnectorWizard\obj\Debug\SqlConnectorWizard.csproj.CoreCompileInputs.cache
+D:\WILCOM\DEV\SqlConnectorWizard\SqlConnectorWizard\obj\Debug\SqlConnectorWizard.exe
+D:\WILCOM\DEV\SqlConnectorWizard\SqlConnectorWizard\obj\Debug\SqlConnectorWizard.pdb
+F:\Wilcom Systems 2020\sqlconnectornew\SqlConnectorWizard\SqlConnectorWizard\obj\Debug\SqlConnectorWizard.csprojAssemblyReference.cache
+F:\Wilcom Systems 2020\sqlconnectornew\SqlConnectorWizard\SqlConnectorWizard\obj\Debug\SqlConnectorWizard.Form1.resources
+F:\Wilcom Systems 2020\sqlconnectornew\SqlConnectorWizard\SqlConnectorWizard\obj\Debug\SqlConnectorWizard.Properties.Resources.resources
+F:\Wilcom Systems 2020\sqlconnectornew\SqlConnectorWizard\SqlConnectorWizard\obj\Debug\SqlConnectorWizard.csproj.GenerateResource.cache
+F:\Wilcom Systems 2020\sqlconnectornew\SqlConnectorWizard\SqlConnectorWizard\obj\Debug\SqlConnectorWizard.exe
+F:\Wilcom Systems 2020\sqlconnectornew\SqlConnectorWizard\SqlConnectorWizard\obj\Debug\SqlConnectorWizard.pdb
+F:\Wilcom Systems 2020\sqlconnectornew\SqlConnectorWizard\SqlConnectorWizard\bin\Debug\log4net.config
+F:\Wilcom Systems 2020\sqlconnectornew\SqlConnectorWizard\SqlConnectorWizard\bin\Debug\SqlConnectorWizard.exe.config
+F:\Wilcom Systems 2020\sqlconnectornew\SqlConnectorWizard\SqlConnectorWizard\bin\Debug\SqlConnectorWizard.exe
+F:\Wilcom Systems 2020\sqlconnectornew\SqlConnectorWizard\SqlConnectorWizard\bin\Debug\SqlConnectorWizard.pdb
+F:\Wilcom Systems 2020\sqlconnectornew\SqlConnectorWizard\SqlConnectorWizard\bin\Debug\log4net.dll
+F:\Wilcom Systems 2020\sqlconnectornew\SqlConnectorWizard\SqlConnectorWizard\bin\Debug\log4net.xml
+F:\Wilcom Systems 2020\sqlconnectornew\SqlConnectorWizard\SqlConnectorWizard\obj\Debug\SqlConnectorWizard.csproj.CopyComplete

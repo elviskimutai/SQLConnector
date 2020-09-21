@@ -31,3 +31,4 @@ F:\Wilcom Systems 2020\sqlconnectornew\SqlConnectorWizard\SqlConnectorWizard\bin
 F:\Wilcom Systems 2020\sqlconnectornew\SqlConnectorWizard\SqlConnectorWizard\bin\Debug\log4net.dll
 F:\Wilcom Systems 2020\sqlconnectornew\SqlConnectorWizard\SqlConnectorWizard\bin\Debug\log4net.xml
 F:\Wilcom Systems 2020\sqlconnectornew\SqlConnectorWizard\SqlConnectorWizard\obj\Debug\SqlConnectorWizard.csproj.CopyComplete
+F:\Wilcom Systems 2020\SqlConnectorWizard\SqlConnectorWizard\bin\Debug\MySql.Data.dll

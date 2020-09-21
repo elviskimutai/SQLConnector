@@ -23,3 +23,4 @@ F:\Wilcom Systems 2020\sqlconnectornew\SqlConnectorWizard\SqlConnectorWizard\obj
 F:\Wilcom Systems 2020\sqlconnectornew\SqlConnectorWizard\SqlConnectorWizard\obj\Release\SqlConnectorWizard.csproj.CopyComplete
 F:\Wilcom Systems 2020\sqlconnectornew\SqlConnectorWizard\SqlConnectorWizard\obj\Release\SqlConnectorWizard.exe
 F:\Wilcom Systems 2020\sqlconnectornew\SqlConnectorWizard\SqlConnectorWizard\obj\Release\SqlConnectorWizard.pdb
+F:\Wilcom Systems 2020\SqlConnectorWizard\SqlConnectorWizard\bin\Release\MySql.Data.dll

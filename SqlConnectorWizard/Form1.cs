@@ -1,4 +1,5 @@
 ﻿
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -33,14 +34,29 @@ namespace SqlConnectorWizard
                
                 String UserName = txtUserName.Text;
                 String Password = txtPassword.Text;
-                String connetionString = "Data Source=" + Servername + "; User ID = " + UserName + "; Password = " + Password;
-                SqlConnection cnn;
-                cnn = new SqlConnection(connetionString);
+                String connetionString = "";
+                if (checkBox1.Checked)
+                {
+                  
+                    connetionString = "SERVER=" + Servername + ";"  + "UID=" + UserName + ";" + "PASSWORD=" + Password + ";";
+                  
+                    MySqlConnection connection;
+                 
+                    connection = new MySqlConnection(connetionString);
+                    // cnn.Open();
 
-               // cnn.Open();
-                
-                List <string> Dbs = GetDatabaseList(cnn);
-                dbCombobox.DataSource = Dbs;
+                    List<string> Dbs = GetMysqlDatabaseList(connection);
+                    dbCombobox.DataSource = Dbs;
+                }
+                else
+                {
+                    connetionString = "Data Source=" + Servername + "; User ID = " + UserName + "; Password = " + Password;
+                    SqlConnection cnn;
+                    cnn = new SqlConnection(connetionString);                  
+                    List<string> Dbs = GetDatabaseList(cnn);
+                    dbCombobox.DataSource = Dbs;
+                }
+              
                // cnn.Close();
 
             }
@@ -48,6 +64,38 @@ namespace SqlConnectorWizard
             {
 
                 MessageBox.Show(ex.Message);
+            }
+        }
+        public List<string> GetMysqlDatabaseList(MySqlConnection con)
+        {
+            List<string> list = new List<string>();
+            try
+            {              
+
+
+                con.Open();
+                MessageBox.Show("Connection Established");              
+
+                using (MySqlCommand cmd = new MySqlCommand("SHOW DATABASES;", con))
+                {
+                    using (IDataReader dr = cmd.ExecuteReader())
+                    {
+                        while (dr.Read())
+                        {
+                            list.Add(dr[0].ToString());
+                        }
+                    }
+                }
+                con.Close();
+
+                return list;
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+                return list;
             }
         }
         public List<string> GetDatabaseList(SqlConnection con)
@@ -85,11 +133,11 @@ namespace SqlConnectorWizard
                 return list;
             }
         }
-        public static void EditconnetionString(String URL)
+        public static void EditconnetionString(String URL,String name)
         {
             try
             {
-                String iniPath = AppDomain.CurrentDomain.BaseDirectory+ "connetionString.ini";            
+                String iniPath = AppDomain.CurrentDomain.BaseDirectory+ name;            
                 StringBuilder newFile = new StringBuilder();                
                 newFile.Append(URL);
                 File.WriteAllText(@iniPath, newFile.ToString());
@@ -162,16 +210,27 @@ namespace SqlConnectorWizard
                 String DatabaseName = dbCombobox.SelectedItem.ToString();
                 String UserName = txtUserName.Text;
                 String Password = txtPassword.Text;
-
-                String connetionString = "Data Source=" + Servername + ";Initial Catalog = " + DatabaseName + "; User ID = " + UserName + "; Password = " + Password;
-                String en=Crypto.Encrypt(connetionString);
+                String en = "";
+                if (checkBox1.Checked)
+                {
+                    string connectionString;
+                    connectionString = "SERVER=" + Servername + ";" + "DATABASE=" +
+                    DatabaseName + ";" + "UID=" + UserName + ";" + "PASSWORD=" + Password + ";";
+                    en = Crypto.Encrypt(connectionString);
+                    EditconnetionString(en, "mysqlconnetionString.ini");
+                }
+                else
+                {
+                    String connetionString = "Data Source=" + Servername + ";Initial Catalog = " + DatabaseName + "; User ID = " + UserName + "; Password = " + Password;
+                    en = Crypto.Encrypt(connetionString);
+                    EditconnetionString(en, "connetionString.ini");
+                }
+               
 
                 String EazzyTillNo = txtEazzyTillNo.Text;
                 String EazzyUrl = txtEazzyUrl.Text;
-
                 String MpesaTillNo = txtMpesaTillNo.Text;
-                String mpesaUrl = txtmpesaUrl.Text;
-               
+                String mpesaUrl = txtmpesaUrl.Text;               
 
                 if (!String.IsNullOrEmpty(EazzyTillNo) && !String.IsNullOrEmpty(EazzyUrl))
                 {
@@ -189,7 +248,7 @@ namespace SqlConnectorWizard
                     EditTillFile(enMpesaTillNo, "MpesaTill");
                     EditTillFile(enmpesaUrl, "MpesaUrl");
                 }
-                EditconnetionString(en);
+                
                
                 // String conn = Crypto.Decrypt(en);
                 MessageBox.Show("Configurations Saved");
